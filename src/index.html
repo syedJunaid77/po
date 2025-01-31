@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new project</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .mobile-swiper {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-button-next {
+            color: #fff;
+            right: 50px;
+        }
+
+        .swiper-button-prev {
+            color: #fff;
+            left: 50px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            /* height: 100%; */
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <header class="text-white bg-blue-900 body-font">
+        <div class="container mr-4 flex flex-wrap p-4 flex-row items-center justify-between shadow">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img class="h-16 w-16 md:mt-0  " src="img/MPALogo.png" alt="">
+            </a>
+
+            <h1 class="text-xl font-bold text-gray-800"></h1>
+            <nav
+                class="md:ml-auto md:mr-auto hidden md:flex flex-wrap items-center text-lg font-medium justify-center cursor-pointer">
+                <a href="/src/index.html" class="text-white mr-5">Home</a>
+                <a href="/src/medicare.html" class="text-white mr-5">Medicare</a>
+                <a href="/src/Events.html" class="text-white mr-5">Events</a>
+                <a href="/src/Resources.html" class="text-white mr-5">Resources</a>
+                <a href="/src/Who We Are.html" class="text-white mr-5">Who We Are</a>
+                <a href="/src/Contact Us.html" class="text-white mr-5">Contact Us</a>
+                <a href="/src/Join Our Team.html" class="text-white mr-5">Join Our Team</a>
+            </nav>
+            <button class="md:hidden md:mt-0 bg-white text-gray-600" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="menu" class="hidden absolute top-16 left-0 w-full bg-blue-900 text-white shadow-lg p-4 z-20">
+                <a href="/src/index.html" class="block py-2 ">Home</a>
+                <a href="/src/medicare.html" class="block py-2 ">Medicare</a>
+                <a href="/src/Events.html" class="block py-2 ">Events</a>
+                <a href="/src/Resources.html" class="block py-2 ">Resources</a>
+                <a href="/src/Who We Are.html" class="block py-2 ">Who We Are</a>
+                <a href="/src/Contact Us.html" class="block py-2 ">Contact Us</a>
+                <a href="/src/Join Our Team.html" class="block py-2 ">Join Our Team</a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="swiper mySwiper md:flex hidden relative ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/mpa1.jpeg" alt="">
+                <div class="absolute text-4xl text-blue-900 mb-20 font-medium">
+                    <h1>Easily Climb the Medicare Mountain with M-Power
+                        Previous
+                    </h1>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="img/mpa2.jpeg" alt="">
+                <div class="absolute text-4xl text-blue-900 mb-20 font-medium">
+                    <h1>Easily Climb the Medicare Mountain with M-Power
+                        Previous
+                    </h1>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="img/mpa3.jpeg" alt="">
+                <div class="absolute text-4xl text-blue-900 mb-20 font-medium">
+                    <h1>Easily Climb the Medicare Mountain with M-Power
+                        Previous
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+    <div class="swiper mobileSwiper flex md:hidden">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/mpa1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="img/mpa2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="img/mpa3.jpeg" alt=""></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-3xl font-medium title-font mb-4 text-black">We Can Help You in a Manner
+                    You Feel Most Comfortable
+                    With!
+                </h1>
+                <p class="xl:w-4/5 mx-auto leading-relaxed text-xl text-black m-4">Empower is defined as, “give
+                    (someone)
+                    the
+                    authority
+                    or
+                    power to do
+                    something. Or make (someone) stronger and more
+                    confident, especially in controlling their life and claiming their rights.”</p>
+                <p class="xl:w-4/5 mx-auto leading-relaxed text-xl text-black m-4">M-Power Agency LLC was named
+                    accordingly
+                    because
+                    our
+                    focus
+                    is on helping
+                    individuals with making informed decisions with
+                    their risk management and insurance options.</p>
+            </div>
+
+        </div>
+    </section>
+    <section class=" text-white py-8">
+        <div class="flex flex-col items-center justify-center h-96 overflow-hidden text-center w-full relative">
+            <img class="w-full h-full object-cover object-top rounded-lg lg:w-full" src="img/mpa4.jpeg"
+                alt="Responsive Image">
+            <div class="absolute inset-0 flex items-center justify-center h-full"><a href="/"
+                    class="mt-4 w-32 bg-blue-900 hover:bg-white text-white hover:text-blue-900 font-normal rounded py-2 px-4 border-2 border-blue-900 shadow-md hover:shadow-lg transition-all duration-300">
+                    Find Out More
+                </a></div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 md:py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-4xl text-2xl font-medium title-font text-gray-900">We work with a variety of carriers
+                    including:
+                </h1>
+            </div>
+            <div class="flex flex-wrap -m-4 justify-center">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-6 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-full h-full mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                <img src="img/1-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full  p-6 flex-col">
+                        <div class="flex items-center flex-col mb-3 ">
+                            <div
+                                class="w-full h-full mr-3 inline-flex items-center md:mt-12 bg-gray-200 justify-center rounded flex-shrink-0">
+                                <img src="img/3-removebg-preview.png" alt="">
+                            </div>
+                            <div class="justify-center items-center mt-4 w-full bg-indigo-200 rounded-lg shadow-sm">
+                                <button
+                                    class="flex w-full  text-white bg-blue-900 border-2 border-blue-900 py-2 px-8 focus:outline-none hover:bg-white hover:text-blue-900 rounded text-lg justify-center">Find
+                                    an Affordable Health Plan!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full p-6 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-full h-full mr-3 inline-flex items-center justify-center rounded-lg flex-shrink-0">
+                                <img src="img/2-removebg-preview.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 md:py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">What We Do
+                </h1>
+                <p class="lg:w-4/5 w-full leading-relaxed text-black text-base">Medicare can be overwhelming, confusing,
+                    intimidating, and at times, frustrating. How much will my prescriptions cost?
+                    Will my doctors accept my insurance? Are there other programs that can help with my healthcare
+                    costs? All of these
+                    questions can make Medicare seem like a tall mountain to climb. Whether you are already receiving
+                    Medicare or about to
+                    enroll for the first time, we are here to help you or a loved one climb the Medicare Mountain.
+                    Please don’t do it alone,
+                    we are here to help! Our goal is to assist you with finding the best plan to fit your healthcare
+                    needs.</p>
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 bg-blue-900 body-font relative">
+        <div class="container px-5 py-16 mx-auto">
+            <div class="flex flex-col text-center items-center w-full">
+                <img class="w-72 mb-12 " src="img/BBB.jpg" alt="">
+                <p class="lg:w-4/5 mx-auto text-white leading-relaxed text-xl">We do not offer every plan available in
+                    your area. Any information we provide is limited to those plans we do offer in
+                    your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options.
+                </p>
+                <br>
+                <p class="lg:w-4/5 mx-auto text-white leading-relaxed text-xl">This is a proprietary website and is
+                    not associated, endorsed or authorized by the Social Security
+                    Administration, the
+                    Department of Health and Human Services or the Center for Medicare and Medicaid Services. This site
+                    contains
+                    decision-support content and information about Medicare, services related to Medicare and services
+                    for people with
+                    Medicare. If you would like to find more information about the Medicare program, please visit the
+                    Official U.S.
+                    Government Site for People with Medicare located at<a class="text-indigo-400"
+                        href="#">Medicare.gov.</a> Medicare.gov</p>
+            </div>
+
+            <div class="p-4 w-full">
+                <button class="flex mx-auto text-white bg-white border-0 px-2 py-2 focus:outline-none rounded-lg"><img
+                        class="h-16 w-16 m-1" src="img/facebook.png" alt="">
+                    <img class="h-16 w-16 m-1" src="img/instagram.png" alt="">
+                    <img class="h-16 w-16 m-1" src="img/twitter.png" alt="">
+                    <img class="h-16 w-16 m-1" src="img/linkedin.png" alt=""></button>
+
+                <div class=" lg:h-1/2 p-2 pt-8 mt-8 border-0 border-gray-200 text-center">
+
+
+                    <p class="leading-normal text-white text-xl my-5">Copyright © 2025 M-PowerAgency
+
+                        Designed, Managed and Hosted by
+                        <span class="text-yellow-300">KDE Technology</span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+
+
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 3000, // Time in milliseconds between slide transitions
+            //     disableOnInteraction: false, // Continue autoplay even after user interactions
+            // },
+        });
+        var swiper = new Swiper(".mobileSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+
+
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000, // Time in milliseconds between slide transitions
+                disableOnInteraction: false, // Continue autoplay even after user interactions
+            },
+
+
+
+        });
+
+
+    </script>
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
